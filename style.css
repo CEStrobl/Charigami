@@ -1,0 +1,368 @@
+
+
+body {
+    padding-top: 70px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Helvetica;
+    
+}
+  
+main {
+    display: flex;
+    flex: 1;
+}
+  
+article {
+    flex: 1;
+}
+  
+nav,aside {
+    flex: 0 0 12em;
+
+}
+
+a {
+    text-decoration: none;
+    color:unset;
+}
+
+
+  
+/* ~~~~~ NAVIGATION ~~~~~ */
+
+.topnav {
+  overflow: hidden;
+  background-image: linear-gradient(243deg, rgb(79,117,214),rgb(129,150,243)),linear-gradient(288deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%),linear-gradient(112.5deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%),linear-gradient(243deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%); background-blend-mode:overlay, overlay, overlay, normal;
+    color: white;
+    vertical-align: middle;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.topnav brand {
+    float: left;
+    text-decoration: none;
+}
+
+.topnav other {
+    float: right;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.left {
+    /* display: flex; */
+    flex: 1;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.topnav other:hover {
+    background-color: #1e34b36c;
+    transition: 0.5s;
+}
+
+
+
+
+
+/* ~~~~~ SLIDESHOW ~~~~~ */
+
+.slideshow {box-sizing: border-box;}
+.mySlides {display: none;}
+.mySlides img {
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    height: 400px;
+    width: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #8d8d8d;
+}
+
+
+
+.crop {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 100%;
+  height: auto;
+  margin-top: -15%;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from{
+    opacity: .8; 
+    filter: blur(10px); 
+    /* filter: brightness(50%); */
+  }
+  to {
+    opacity: 1; 
+    filter: blur(0px); 
+    /* filter: brightness(100%); */
+  } 
+}
+
+@keyframes fade {
+  from{
+    opacity: .8; 
+    filter: blur(10px); 
+    /* filter: brightness(50%); */
+  }
+  to {
+    opacity: 1; 
+    filter: blur(0px); 
+    /* filter: brightness(100%); */
+  } 
+}
+
+
+.fadeout {
+  -webkit-animation-name: fadeout;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeout;
+  animation-duration: 1.5s;
+  animation-delay: 3.5s;
+}
+
+@-webkit-keyframes fadeout {
+  from{
+    opacity: 1; 
+    filter: blur(0px); 
+    /* filter: brightness(100%); */
+  } 
+  to {
+    opacity: .8; 
+    filter: blur(10px); 
+    /* filter: brightness(50%); */
+  }
+}
+
+@keyframes fadeout {
+  from{
+    opacity: 1; 
+    filter: blur(0px); 
+    /* filter: brightness(100%); */
+  } 
+  to {
+    opacity: .8; 
+    filter: blur(10px); 
+    /* filter: brightness(50%); */
+  }
+}
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+.cropSquare {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cropSquare img {
+  width: auto;
+  height: 200px;
+  /* margin-top: -15%; */
+}
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.container .box
+{
+  flex-wrap: wrap;
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.container .box button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.container .box:hover
+{
+    transform: translateY(-20px);
+}
+
+.container .box .content
+{
+    position: relative;
+    z-index: 10;
+    padding: 10px 30px;
+    margin: 5px;
+}
+.container .box .content h2
+{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.container .box .content p
+{
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+.container .box .content a
+{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+:-webkit-any(article, aside, nav, section) h1, p, button {
+  font-size: 1.5em;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
