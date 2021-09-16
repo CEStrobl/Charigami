@@ -3,39 +3,20 @@
 body {
     padding-top: 70px;
     display: flex;
-    min-height: 100vh;
+    min-height: 50vh;
     flex-direction: column;
     font-family: Helvetica;
-    
-}
-  
-main {
-    display: flex;
-    flex: 1;
-}
-  
-article {
-    flex: 1;
-}
-  
-nav,aside {
-    flex: 0 0 12em;
-
-}
-
-a {
-    text-decoration: none;
-    color:unset;
+    background-color: rgb(255, 255, 255);
 }
 
 
-  
 /* ~~~~~ NAVIGATION ~~~~~ */
 
 .topnav {
   overflow: hidden;
-  background-image: linear-gradient(243deg, rgb(79,117,214),rgb(129,150,243)),linear-gradient(288deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%),linear-gradient(112.5deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%),linear-gradient(243deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%); background-blend-mode:overlay, overlay, overlay, normal;
-    color: white;
+  /* background-image: linear-gradient(243deg, rgb(79,117,214),rgb(129,150,243)),linear-gradient(288deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%),linear-gradient(112.5deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%),linear-gradient(243deg, rgb(18,28,58) 0%, rgb(18,28,58) 22%,rgb(31,54,120) 22%, rgb(31,54,120) 32%,rgb(70,75,188) 32%, rgb(70,75,188) 37%,rgb(90,92,204) 37%, rgb(90,92,204) 51%,rgb(140,136,243) 51%, rgb(140,136,243) 55%,rgb(202,202,202) 55%, rgb(202,202,202) 100%); background-blend-mode:overlay, overlay, overlay, normal; */
+    color: rgb(26, 53, 209);
+    background-color: #fff;
     vertical-align: middle;
     position:fixed;
     top: 0;
@@ -71,15 +52,41 @@ a {
 .right {
     display: flex;
     justify-content: flex-end;
+    margin-right: 60px;
 }
   
 .topnav other:hover {
-    background-color: #1e34b36c;
+    background-color: #6541c7;
+    color: #fff;
     transition: 0.5s;
 }
 
 
 
+
+
+  
+main {
+    display: flex;
+    flex: 1;
+}
+  
+article {
+    flex: 1;
+}
+  
+nav,aside {
+    flex: 0 0 6em;
+
+}
+
+a {
+    text-decoration: none;
+    color:unset;
+}
+
+
+  
 
 
 /* ~~~~~ SLIDESHOW ~~~~~ */
@@ -90,7 +97,7 @@ a {
     justify-content:center;
     align-content: center;
     align-items: center;
-    display: block;
+    display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -144,14 +151,14 @@ a {
 
 .crop {
   width: 100%;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
 }
 
 .crop img {
   width: 100%;
   height: auto;
-  margin-top: -15%;
+  margin-top: -20%;
 }
 
 
@@ -241,6 +248,7 @@ a {
   width: 200px;
   height: 200px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .cropSquare img {
@@ -301,7 +309,7 @@ a {
     width: 320px;
     height: 400px;
     color: #fff;
-    background: #111;
+    background: rgb(15, 15, 46);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,7 +323,7 @@ a {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: rgb(148, 78, 240);
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -324,7 +332,7 @@ a {
 
 .container .box:hover
 {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
 }
 
 .container .box .content
@@ -334,9 +342,9 @@ a {
     padding: 10px 30px;
     margin: 5px;
 }
-.container .box .content h2
+.container .box .content h1
 {
-    font-size: 2em;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -361,8 +369,14 @@ a {
 
 
 
-:-webkit-any(article, aside, nav, section) h1, p, button {
-  font-size: 1.5em;
+:-webkit-any(article, aside, nav, section) h1 {
+  font-size: 1.2em;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+:-webkit-any(article, aside, nav, section) p, button {
+  font-size: 0.9em;
   margin-block-start: 5px;
   margin-block-end: 5px;
 }
